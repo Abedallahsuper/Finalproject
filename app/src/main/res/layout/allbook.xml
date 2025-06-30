@@ -1,0 +1,77 @@
+<!-- res/layout/activity_student_books.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/allBooksLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121111"
+    android:padding="16dp"
+    tools:context=".activities.StudentBooksActivity"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+    <!-- عنوان الصفحة -->
+    <TextView
+        android:id="@+id/tvAllBooksTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Books"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <!-- SearchView للبحث -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search by title..."
+        android:iconifiedByDefault="false"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/white"
+        android:elevation="4dp" />
+
+    <!-- فلتر حسب التصنيف -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by Category"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white" />
+
+    <!-- فلتر حسب المؤلف -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by Author"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinnerAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/white" />
+
+    <!-- قائمة الكتب -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBooks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp"
+        tools:listitem="@layout/student_book_item"/>
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/background_outline"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Edit User"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- حقل الاسم -->
+    <EditText
+        android:id="@+id/etEditUserName"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/poppins"
+        android:paddingStart="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#888888"
+        android:background="@drawable/background_outline"
+
+        app:layout_constraintTop_toBottomOf="@id/dialogTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- حقل البريد الإلكتروني -->
+    <EditText
+        android:id="@+id/etEditUserEmail"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/poppins"
+        android:paddingStart="20dp"
+        android:textColor="#888888"
+        android:textColorHint="#888888"
+        android:background="@drawable/background_outline"
+
+        app:layout_constraintTop_toBottomOf="@id/etEditUserName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <!-- حقل رقم العضوية -->
+    <EditText
+        android:id="@+id/etEditUserMemberId"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:hint="Member ID"
+        android:inputType="text"
+        android:fontFamily="@font/poppins"
+        android:paddingStart="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="#888888"
+        android:background="@drawable/background_outline"
+
+        app:layout_constraintTop_toBottomOf="@id/etEditUserEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <!-- زر حفظ التعديلات -->
+    <Button
+        android:id="@+id/btnSaveEditUser"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="Edit"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/etEditUserMemberId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelEditUser"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- زر إلغاء -->
+    <Button
+        android:id="@+id/btnCancelEditUser"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="Cancel"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:backgroundTint="#F44336"
+        app:layout_constraintTop_toTopOf="@id/btnSaveEditUser"
+        app:layout_constraintStart_toEndOf="@id/btnSaveEditUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

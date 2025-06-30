@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loadscreenbackground"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layoutDirection="ltr">
+
+        <!-- عنوان الصفحة -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Edit Book Details"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <!-- حقل العنوان -->
+        <EditText
+            android:id="@+id/etAddBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_outline"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Book Title"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#888888"
+            android:textSize="18sp" />
+
+        <!-- حقل المؤلف -->
+        <EditText
+            android:id="@+id/etAddBookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_outline"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Book Author"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#888888"
+            android:textSize="18sp" />
+
+        <!-- حقل الوصف -->
+        <EditText
+            android:id="@+id/etAddBookDescription"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_outline"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Book Description"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#888888"
+            android:textSize="18sp" />
+
+        <!-- حقل التصنيف -->
+        <EditText
+            android:id="@+id/etAddBookCategory"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_outline"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Book Category"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#888888"
+            android:textSize="18sp" />
+
+        <!-- زر التحديث -->
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/poppins_medium"
+            android:text="UPDATE"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

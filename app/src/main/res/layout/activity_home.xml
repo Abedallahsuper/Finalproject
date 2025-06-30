@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#0E0E0E"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- شعار المكتبة -->
+            <ImageView
+                android:id="@+id/imgLibraryLogo"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/logo"
+                android:layout_marginTop="16dp"
+                android:contentDescription="Library Logo" />
+
+            <!-- Welcome Message -->
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Welcome to the University Library!"
+
+                android:textSize="22sp"
+                android:textColor="#FFEB3B"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                />
+
+            <!-- About the Library -->
+
+            <!-- Technical Support -->
+            <TextView
+                android:id="@+id/txtLibraryInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins"
+                android:lineSpacingExtra="4dp"
+                android:text="Our university library offers a rich collection of books, references to support your learning journey. You can browse books and borrow books digitally!"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtSupportTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Technical Support"
+                android:textSize="18sp"
+                android:layout_marginTop="32dp"
+                android:textColor="#F81302"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:id="@+id/txtSupportInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For any issues ,please contact our support team:\n\n support@universitylib.com\n +972-594-681-210"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="4dp"/>
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

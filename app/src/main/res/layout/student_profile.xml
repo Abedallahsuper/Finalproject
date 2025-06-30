@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    android:padding="24dp"
+    tools:context=".activities.StudentProfileActivity">
+
+    <!-- عنوان الصفحة -->
+    <TextView
+        android:id="@+id/tvPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Student Profile"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FDFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+        />
+
+    <!-- الكارد بشكل طولي -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardStudentInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPageTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#103E3A">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#F3F6F6"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#B2DFDB" />
+
+            <TextView
+                android:id="@+id/tvStudentEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#F4F8F7"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#B2DFDB" />
+            <TextView
+                android:id="@+id/tvStudentIdmember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#F3F6F6"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#B2DFDB" />
+
+
+            <TextView
+                android:id="@+id/tvStudentPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#F7FBFB"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- زر عرض الاستعارات -->
+    <Button
+        android:id="@+id/btnViewBorrowedBooks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" View My Borrowed Books"
+        android:textAllCaps="false"
+        android:backgroundTint="#209386"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="30dp"
+        android:elevation="4dp"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- زر الخروج -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Logout"
+        android:textAllCaps="false"
+        android:backgroundTint="#D32F2F"
+        android:textColor="@android:color/white"
+        android:elevation="4dp"
+        app:cornerRadius="24dp"
+        android:layout_marginBottom="100dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

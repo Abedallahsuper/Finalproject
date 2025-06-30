@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardAuthor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="12dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:background="#090909">
+
+        <!-- اسم المؤلف -->
+        <TextView
+            android:id="@+id/tvAuthorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Author Name"
+            android:textColor="#FAFAFA"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_semibold" />
+
+        <!-- عدد الكتب المرتبطة -->
+        <TextView
+            android:id="@+id/tvAuthorBooksCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Books: 5"
+            android:textColor="#FAFAFA"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
