@@ -42,43 +42,33 @@ public class BorrowedBook {
     public void setAuthor(String author) {
         this.author = author;
     }
-
     public String getCategory() {
         return category;
     }
-
     public void setCategory(String category) {
         this.category = category;
     }
-
     public String getMemberName() {
         return memberName;
     }
-
     public void setMemberName(String memberName) {
         this.memberName = memberName;
     }
-
     public int getMemberId() {
         return memberId;
     }
-
     public void setMemberId(int memberId) {
         this.memberId = memberId;
     }
-
     public String getBorrowDate() {
         return borrowDate;
     }
-
     public void setBorrowDate(String borrowDate) {
         this.borrowDate = borrowDate;
     }
-
     public String getImageUri() {
         return imageUri;
     }
-
     public void setImageUri(String imageUri) {
         this.imageUri = imageUri;
     }
